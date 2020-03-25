@@ -1,9 +1,21 @@
-Ici, on liste toutes les recettes:
+<h1> Ici, on liste toutes les recettes: </h1>
 </br>
 
 <ul>
 
  <% @recipes.each do |t| %>
- 	
- <li>	Titre: <%= t.title %> </br>, Recette: <%= t.description %> </li>
+<div class="row" style="margin-top: 140px;margin-left: 100px; ">
+
+	<div class="card border-secondary mb-3" style="max-width: 20rem;">
+	  
+	  	<a href="<%= recipe_path(t) %>" class="card-header">Voir plus </a>
+	 	  <div class="card-body">
+	    <h4 class="card-title"><%= t.title %> </h4>
+	    <p class="card-text"><%= t.description %> </p>
+	  </div>
+	</div>
+
+</div>
+
+
  <% end %>

@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+    
+
+
+<h1> La recette de <%= @recipe.title %> ! </h1>
+
+<h2> Ingrédients & recette:</h2>
+
+<%= @recipe.description %>
+
+<% else %>
+
+<h1> Tu dois te connecter pour voir la recette ! </h1>
+
+ <%= link_to "Je me connecte", new_user_session_path %>
+
+ <% end %> 
