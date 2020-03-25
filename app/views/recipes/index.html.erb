@@ -1,0 +1,9 @@
+Ici, on liste toutes les recettes:
+</br>
+
+<ul>
+
+ <% @recipes.each do |t| %>
+ 	
+ <li>	Titre: <%= t.title %> </br>, Recette: <%= t.description %> </li>
+ <% end %>
