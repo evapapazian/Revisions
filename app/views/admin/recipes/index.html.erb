@@ -1,0 +1,21 @@
+<h1> Bienvenue <%= @current_user.first_name %>. Tu as accès à cette page car tu es admin. Elle récapitule tout ce que tu as dans ton site. </h1><br>
+
+Tu peux créer une recette: <%= link_to "Nouvelle recette", new_admin_recipe_path %>
+
+<br> Voici toutes les recettes actuellement dispo sur le site:
+
+ <% @recipes.each do |t| %>
+<div class="row" style="margin-top: 140px;margin-left: 100px;">
+
+	<div class="card border-secondary mb-3" style="max-width: 20rem;">
+	  
+	  	<a href="<%= recipe_path(t) %>" class="card-header">Voir plus </a>
+	 	  <div class="card-body">
+	    <h4 class="card-title"><%= t.title %> </h4>
+	    <p class="card-text"><%= t.description %> </p>
+	  </div>
+	</div>
+
+</div>
+
+<% end %> 
