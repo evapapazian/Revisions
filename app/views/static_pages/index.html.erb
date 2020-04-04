@@ -1,13 +1,35 @@
 
+<style>
+
+  .jumbotron{background-image: url(https://images.pexels.com/photos/674554/pexels-photo-674554.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size:cover;}
+
+  .display-3{font-weight: bold}
+
+  .lead{font-weight: bold}
+  h2{ margin-left: 35%}
+  h3{font-style: italic;}
+
+  .bold{font-weight: bold}
+
+  .card{margin-left: 50px; margin-right:50px;}
 
 
-<div class="jumbotron" >
-  <h1 class="display-3">Bienvenue sur la page d'accueil</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+
+</style>
+
+
+
+<div class="jumbotron">
+  <h1 class="display-3">Bienvenue dans mon univers !</h1>
+  <p class="lead">Ici, tu trouveras des recettes saines et économiques, mais aussi des conseils santé, sport, bien-être... Tu me rejoins ?</p>
+ 
+  <p>Envie de voir le détail des recettes ? Crée ton compte, ça prend trente secondes !</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" role="button"<%=link_to "Aller aux recettes", recipes_path %> 
+    <a class="btn btn-primary btn-lg" role="button"<%=link_to "Je crée un compte !", new_user_registration_path %> 
+      <a class="btn btn-primary btn-lg" role="button"<%=link_to "Je me connecte !", new_user_session_path %>
+        <a class="btn btn-secondary btn-lg" role="button" <%= link_to "Voir les recettes", recipes_path %>
   </p>
 </div>
 
@@ -18,36 +40,70 @@
 
       <% if current_user.first_name != nil %>
      
-      <h2> Tu es connecté en tant que: <%= current_user.first_name %> </h2>
+      <h3> Tu es connecté en tant que: <a class="bold"> <%= current_user.first_name %> </a> </h3>
       
       <% else %>
 
-      <h2> Tu es bien connecté ! </h2>
+      <h3> Tu es bien connecté ! </h3>
       <% end %> 
 
-
-   <li>
-    <%= link_to "Mon profil", user_path(current_user) %>
-  </li>
-
-    <li>
-      <%= link_to "Modifier mon profil", edit_user_registration_path %>
-    </li>
-
-    <li>
-      <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete %>
-    </li>
-
-  <% else %>
-    <li>    
-      <%= link_to "Se connecter", new_user_session_path %>
-    </li>
-
-    <li>
-      <%= link_to "S'inscrire", new_user_registration_path %>
-    </li>
-
-  <% end %>
-</ul>
+<% end %> 
 
 
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+
+<h2> Que vas-tu trouver sur ce site ?</h2>
+
+<br>
+<br>
+Si tu es étudiant, ou que tu as peu de moyens, de temps ou d'idées, si tu cherches à modifier ton alimentation pour manger plus sainement, si tu cherches à réduire ta consommation de produits animaux et/ou devenir végétarien, ou bien tout ça à la fois, tu es au bon endroit ! <br>
+Bienvenue sur le site de la Coccinelle. Je m'appelle Eva, j'ai 22 ans, et je suis végétarienne depuis bientôt cinq ans. J'aime manger autant que j'aime marcher dans les collines, et je désire aujourd'hui te partager mes passions. Je vais ici publier régulièrement des recettes de cuisine saines, qui seront disponibles en avant première sur le compte instagram : <a href="https://www.instagram.com/coccinelle_en_cuisine/?hl=fr"> @coccinelle_en_cuisine. </a> <br>
+Je suis très fière de lancer aujourd'hui ce site, car je l'ai monté de A à Z avec mes petites mimines, sans utiliser Wordpress, Wix ou tout autre aide du genre. Je te demanderai donc d'être indulgent avec moi, surtout au début, car j'ai encore beaucoup à apprendre en programmation et développement (pour les dev et les curieux, j'ai utilisé Ruby on Rails). <br>
+Mais ne nous égarons pas. Comme je te le disais, tu vas ici pouvoir découvrir des recettes simples et saines, faisables avec des ingrédients du quotidien. J'aime les baies de goji et les graines de chia, mais ici je veux te montrer qu'une alimentation équilibrée est tout à fait possible en évitant de se ruiner en superfoods. De temps en temps, je te partagerai aussi mes autres passions: lecture, nature, sport... Ces articles-là seront en ligne sur la partie "Blog", la partie principale restant dédiée aux recettes. Afin d'avoir accès au détail des recettes, tu dois créer un compte, mais promis, ça ne prend que dix secondes. <br>
+
+ Merci de m'avoir lue jusque là, et merci de me suivre dans cette nouvelle aventure, j'ai hâte de voir comment ça va évoluer ! 
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+ <h2> Idée de repas sur une journée: </h2>
+ <br>
+ <br>
+
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="https://coccinelle-en-cuisine.s3.eu-west-3.amazonaws.com/porridge.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Petit dèj: Porridge gourmand et thé en vrac</h5>
+      <p class="card-text">Des flocons d'avoine, du lait d'amande, une pincée de cannelle, et on cuit tout à feu doux. Ajoutez les ingrédients de votre choix pour le rendre plus gourmand: banane, chocolat, graines de tournesol, granola, sirop d'érable, noix...</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="https://coccinelle-en-cuisine.s3.eu-west-3.amazonaws.com/gnocchi.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Déjeuner: Gnocchis de patate douce, salade et oeuf au plat</h5>
+      <p class="card-text">Des gnocchis fait maison, une salade de mâche et avocat et un oeuf: repas prêt en quelques minutes !</p>
+     
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://coccinelle-en-cuisine.s3.eu-west-3.amazonaws.com/tarte.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Dîner: Tarte aux légumes et salade </h5>
+      <p class="card-text">Une petite tarte poireaux-courgettes faite maison et une grande salade ou une soupe: rapide, réconfortant et délicieux !</p>
+      
+    </div>
+  </div>
+</div>

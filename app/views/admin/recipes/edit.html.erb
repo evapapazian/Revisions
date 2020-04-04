@@ -1,0 +1,19 @@
+Coucou @current_user.first_name, ici tu peux éditer ta recette
+
+<%= form_tag url_for(action: 'update'), method: "put" do%>
+
+      <%= label_tag 'Titre de la recette' %>
+      <%= text_field_tag 'title', @title %>
+      <br /> <br />
+
+      <%= label_tag 'Description recette' %>
+      <%= text_area_tag 'description', @description %>
+      <br /> <br />
+
+      <%= label_tag 'Ingrédients recette' %>
+      <%= text_area_tag 'ingredients', @ingredients %>
+      <br /> <br />
+
+      <%= submit_tag "Modifier la recette" %>
+
+    <% end %>

@@ -24,6 +24,17 @@ before_action :authenticate_user!, :require_admin
 
 	end 
 
+	def update 
+
+		@recipe = Recipe.find(params[:id])
+
+		if @recipe.update(title: params[:title], description: params[:description], ingredients: params[:ingredients])
+			redirect_to admin_recipes_path
+		else
+			render :index
+		end 
+	end 
+
 	def destroy
 			@recipe = Recipe.find(params[:id])
 			if @recipe.delete
