@@ -4,9 +4,11 @@
 
 <h1> La recette de <%= @recipe.title %> ! </h1>
 
-<h2> Ingrédients & recette:</h2>
+<h2> Ingrédients & recette:</h2> <br>
 
-<%= @recipe.description %>
+Ingrédients: <%= @recipe.ingredients %> <br>
+
+Description: <%= @recipe.description %> <br>
 
 <% else %>
 

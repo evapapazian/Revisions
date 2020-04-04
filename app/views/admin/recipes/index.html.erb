@@ -10,6 +10,7 @@ Tu peux créer une recette: <%= link_to "Nouvelle recette", new_admin_recipe_pat
 	<div class="card border-secondary mb-3" style="max-width: 20rem;">
 	  
 	  	<a href="<%= recipe_path(t) %>" class="card-header">Voir plus </a>
+	  	<%= link_to "Supprimer la recette", admin_recipe_path(t), method: :delete %>  
 	 	  <div class="card-body">
 	    <h4 class="card-title"><%= t.title %> </h4>
 	    <p class="card-text"><%= t.description %> </p>

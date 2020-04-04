@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   resources :users, only: [:show] 
   resources :recipes
   root 'static_pages#index'
+
+  namespace :admin do
+  resources :recipes, :users 
+end
 end

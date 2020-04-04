@@ -4190,3 +4190,2797 @@ Processing by RecipesController#show as HTML
 Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/recipes" for 127.0.0.1 at 2020-03-25 12:58:08 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 231ms (Views: 219.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-25 12:58:11 +0100
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-25 12:58:13 +0100
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 91ms (Views: 83.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2020-03-25 12:58:14 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 35.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-03-25 12:58:16 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (99.1ms)
+Completed 200 OK in 145ms (Views: 118.2ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-03-25 12:58:18 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gZol63aQDHjTh/OflwQn4+1NNqw8s1rEmtt3N9gbcJtpfxnXCJrU3CZkVP2m6GHQMhaBX5r1ohQygn82RdzMpA==", "user"=>{"email"=>"eva.papazian@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "eva.papazian@hotmail.com"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 206ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-25 12:58:18 +0100
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2020-03-25 12:58:20 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-25 12:58:23 +0100
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (9.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:44
+Completed 200 OK in 64ms (Views: 58.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2020-03-25 12:58:24 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 66ms (Views: 58.4ms | ActiveRecord: 1.7ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mRecipe Create (0.5ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Squash"], ["description", "Dolores ut dolor aspernatur repellat quisquam beatae molestiae molestiae id."], ["created_at", "2020-03-25 12:06:33.031792"], ["updated_at", "2020-03-25 12:06:33.031792"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Bok Choy"], ["description", "Excepturi qui pariatur esse provident nihil repudiandae unde id delectus."], ["created_at", "2020-03-25 12:06:33.043545"], ["updated_at", "2020-03-25 12:06:33.043545"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "English Spinach"], ["description", "Tenetur illum magni illo et qui rerum dolores omnis at."], ["created_at", "2020-03-25 12:06:33.047789"], ["updated_at", "2020-03-25 12:06:33.047789"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Zucchini"], ["description", "Laboriosam iure unde tenetur atque est rerum dolores quis deleniti."], ["created_at", "2020-03-25 12:06:33.051898"], ["updated_at", "2020-03-25 12:06:33.051898"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Broccoli"], ["description", "Sapiente alias voluptate enim voluptatem similique eum temporibus nobis aut."], ["created_at", "2020-03-25 12:06:33.055909"], ["updated_at", "2020-03-25 12:06:33.055909"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for 127.0.0.1 at 2020-03-28 17:43:36 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 267ms (Views: 257.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-28 17:43:43 +0100
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 34ms (Views: 23.8ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-28 17:43:54 +0100
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-28 17:47:09 +0100
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"recipes"}, missing required keys: [:id]):
+    33: 
+    34:   <div class="collapse navbar-collapse" id="navbarColor01">
+    35:     <ul class="navbar-nav mr-auto">
+    36:        <a class="nav-link"<%= link_to "Recettes", recipe_path %>
+    37:      
+    38:      
+    39:         <a class="nav-link" href="#">Pricing</a>
+  
+app/views/layouts/application.html.erb:36:in `_app_views_layouts_application_html_erb___813422163192630042_70107523890420'
+Started GET "/" for 127.0.0.1 at 2020-03-28 17:47:17 +0100
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-28 17:47:19 +0100
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-28 17:47:52 +0100
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+Started GET "/recipes/new" for 127.0.0.1 at 2020-03-28 17:53:34 +0100
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 32ms (Views: 19.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2020-03-28 17:53:41 +0100
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-28 18:16:24 +0100
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 73ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-28 18:16:31 +0100
+Processing by Admin::RecipesController#new as HTML
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...current_user.is_admin = false );@output_buffer.safe_append='
+...                              ^
+/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:4: syntax error, unexpected keyword_else, expecting ')'
+'.freeze; else 
+          ^~~~
+/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;
+          ^~~
+/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admin/recipes/new.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/admin/recipes/new.html.erb:4: syntax error, unexpected keyword_else, expecting ')'
+app/views/admin/recipes/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/admin/recipes/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admin/recipes/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-28 18:17:54 +0100
+Processing by Admin::RecipesController#new as HTML
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...nd=( if current_user.is_admin );@output_buffer.safe_append='
+...                              ^
+/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:4: syntax error, unexpected keyword_else, expecting ')'
+'.freeze; else 
+          ^~~~
+/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;
+          ^~~
+/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admin/recipes/new.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/admin/recipes/new.html.erb:4: syntax error, unexpected keyword_else, expecting ')'
+app/views/admin/recipes/new.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/admin/recipes/new.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admin/recipes/new.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-28 18:20:47 +0100
+  
+SyntaxError (/home/evapapazian/Documents/REVISIONS/entrainement/app/controllers/admin/recipes_controller.rb:16: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/admin/recipes_controller.rb:16: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-28 18:21:01 +0100
+Processing by Admin::RecipesController#new as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-03-28 18:21:01 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 46ms (Views: 31.2ms | ActiveRecord: 5.2ms)
+
+
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mRecipe Create (6.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Cabbage"], ["description", "Non aliquid tempora inventore aut sit nesciunt debitis in soluta."], ["created_at", "2020-03-28 17:22:39.743600"], ["updated_at", "2020-03-28 17:22:39.743600"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Chilli Pepper"], ["description", "Hic magnam quaerat qui sit doloremque alias ab perspiciatis est."], ["created_at", "2020-03-28 17:22:39.757305"], ["updated_at", "2020-03-28 17:22:39.757305"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beans"], ["description", "Facere quisquam minima occaecati cum dolores modi at ipsa officiis."], ["created_at", "2020-03-28 17:22:39.761763"], ["updated_at", "2020-03-28 17:22:39.761763"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Jicama"], ["description", "Accusantium voluptatem ipsum soluta quae quia recusandae sit qui nisi."], ["created_at", "2020-03-28 17:22:39.766070"], ["updated_at", "2020-03-28 17:22:39.766070"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Fresh Chillies"], ["description", "Consequatur delectus aut aliquid ut expedita deserunt voluptatibus reiciendis nostrum."], ["created_at", "2020-03-28 17:22:39.770388"], ["updated_at", "2020-03-28 17:22:39.770388"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "eva.papazian@mail.be"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "is_admin") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "eva.papazian@mail.be"], ["encrypted_password", "$2a$11$XwJgtPp7hRRO9n1QwxbrXOI6bZ//8Eg/Yh4bjizu0Mfk.jpPS0jqe"], ["created_at", "2020-03-28 17:22:39.933145"], ["updated_at", "2020-03-28 17:22:39.933145"], ["is_admin", true]]
+  ↳ db/seeds.rb:16
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-03-28 18:22:54 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7m4/sL/VsAL6lhfTtfWnsiWT3K33Gn2VPyIqH1TZZf7im9yejfgMPLUAujNJkplkUdcq4CjQt6oQ8Uyh+/X9Gg==", "user"=>{"email"=>"eva.papazian@mail.be", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "eva.papazian@mail.be"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin/recipes/new
+Completed 302 Found in 155ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-28 18:22:55 +0100
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-28 18:23:43 +0100
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 50.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 13:42:20 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:24: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/admin/recipes/new.html.erb:24: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 13:42:42 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     8:   <%= form_tag url_for(action: 'create'), method: 'post' do %>
+     9: 
+    10:             <%= label_tag "Nom de la recette" %>
+    11:             <%= text_field_tag 'title', @recipe.title, class: "form-control" %>
+    12: 
+    13:             
+    14:             <%= label_tag "Description de la recette" %>
+  
+app/views/admin/recipes/new.html.erb:11:in `block in _app_views_admin_recipes_new_html_erb__4159427126227839633_70107389866040'
+app/views/admin/recipes/new.html.erb:8:in `_app_views_admin_recipes_new_html_erb__4159427126227839633_70107389866040'
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 13:43:31 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 4.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     8:   <%= form_tag url_for(action: 'create'), method: 'post' do %>
+     9: 
+    10:             <%= label_tag "Nom de la recette" %>
+    11:             <%= text_field_tag 'title', @recipe.title, class: "form-control" %>
+    12: 
+    13:             
+    14:             <%= label_tag "Description de la recette" %>
+  
+app/views/admin/recipes/new.html.erb:11:in `block in _app_views_admin_recipes_new_html_erb__4159427126227839633_70107530555580'
+app/views/admin/recipes/new.html.erb:8:in `_app_views_admin_recipes_new_html_erb__4159427126227839633_70107530555580'
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 13:43:54 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     8:   <%= form_tag url_for(action: 'create'), method: 'post' do %>
+     9: 
+    10:           <!--  <%= label_tag "Nom de la recette" %>
+    11:             <%= text_field_tag 'title', @recipe.title, class: "form-control" %> -->
+    12: 
+    13:             
+    14:             <%= label_tag "Description de la recette" %>
+  
+app/views/admin/recipes/new.html.erb:11:in `block in _app_views_admin_recipes_new_html_erb__4159427126227839633_70107531066000'
+app/views/admin/recipes/new.html.erb:8:in `_app_views_admin_recipes_new_html_erb__4159427126227839633_70107531066000'
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 13:44:16 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     8:   <%= form_tag url_for(action: 'create'), method: 'post' do %>
+     9: 
+    10:           <!--  <%= label_tag "Nom de la recette" %>-->
+    11:            <!-- <%= text_field_tag 'title', @recipe.title, class: "form-control" %> -->
+    12: 
+    13:             
+    14:             <%= label_tag "Description de la recette" %>
+  
+app/views/admin/recipes/new.html.erb:11:in `block in _app_views_admin_recipes_new_html_erb__4159427126227839633_70107707766340'
+app/views/admin/recipes/new.html.erb:8:in `_app_views_admin_recipes_new_html_erb__4159427126227839633_70107707766340'
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 13:44:46 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:11: syntax error, unexpected tLABEL, expecting '='
+...ield_tag, @recipe.title, class: "form-control" );@output_buf...
+...                         ^~~~~~):
+  
+app/views/admin/recipes/new.html.erb:11: syntax error, unexpected tLABEL, expecting '='
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 13:45:08 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:11: syntax error, unexpected ')', expecting '='
+... text_field_tag, @recipe.title);@output_buffer.safe_append='
+...                              ^
+/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+            '.freeze; end ;
+                      ^~~
+/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:24: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/new.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admin/recipes/new.html.erb:11: syntax error, unexpected ')', expecting '='
+app/views/admin/recipes/new.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+app/views/admin/recipes/new.html.erb:24: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admin/recipes/new.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 13:52:09 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+     8: <%= form_tag url_for(action: 'create'), method: "post" do %>
+     9: 
+    10:       <%= label_tag 'Titre de la recette' %>
+    11:       <%= text_field_tag 'title', @recipe.title %>
+    12:       <br /> <br />
+    13: 
+    14:       <%= label_tag 'Description recette' %>
+  
+app/views/admin/recipes/new.html.erb:11:in `block in _app_views_admin_recipes_new_html_erb__4159427126227839633_70107708148020'
+app/views/admin/recipes/new.html.erb:8:in `_app_views_admin_recipes_new_html_erb__4159427126227839633_70107708148020'
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 13:52:54 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 38ms (Views: 20.4ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/admin/recipes" for 127.0.0.1 at 2020-03-29 13:53:08 +0200
+Processing by Admin::RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4dG42+97CmvxUiM+Xkyi+m2GYf7pH4hYa0ZhHEDlt0NUqtAQKkz7Bg56MNf0SrciITQzJ8ioc7q/lFoM38udEw==", "title"=>"Gâteau", "body"=>"Une recette de gâteau", "commit"=>"Create Recipe"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+No template found for Admin::RecipesController#create, rendering head :no_content
+Completed 204 No Content in 58ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 13:53:12 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (10.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:44
+Completed 200 OK in 67ms (Views: 59.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 13:55:13 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 37ms (Views: 21.1ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/admin/recipes" for 127.0.0.1 at 2020-03-29 13:55:16 +0200
+Processing by Admin::RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jWjj35IDroTIyg+UbP9V/xbfWvTSwfbqQu7Ks/DNpCc4E4sUVzRf6TfiHH3G+UAnWm0ILfN2DQiWPPGjb+OOdw==", "title"=>"Gâteau", "body"=>"Une recette de gâteau", "commit"=>"Create Recipe"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 38ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 13:55:17 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:44
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 13:56:08 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 39ms (Views: 22.5ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/admin/recipes" for 127.0.0.1 at 2020-03-29 13:56:10 +0200
+Processing by Admin::RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pdZ16Qz/opQuxkuYVLcXeF4i/T5Q8cYcvW60h3VsijoQrR0iychT+dHuWHH+sQKgEpCv53FGPf5pvI+X6kKgag==", "title"=>"Gâteau", "body"=>"Une recette de gâteau", "commit"=>"Create Recipe"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[36mRecipe Create (1.0ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Gâteau"], ["description", "Gâteau"], ["created_at", "2020-03-29 11:56:10.741191"], ["updated_at", "2020-03-29 11:56:10.741191"]]
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+Redirected to http://localhost:3000/recipes
+Completed 302 Found in 48ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 13:56:10 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (8.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:44
+Completed 200 OK in 47ms (Views: 42.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/recipes/21" for 127.0.0.1 at 2020-03-29 13:56:23 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 33ms (Views: 28.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/21" for 127.0.0.1 at 2020-03-29 13:56:59 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 41ms (Views: 29.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:01:01 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 22.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:01:04 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:01:05 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 62ms (Views: 54.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:01:06 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 65ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:01:12 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2020-03-29 14:01:15 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 45ms (Views: 33.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-03-29 14:01:17 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 35ms (Views: 30.1ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2020-03-29 14:01:20 +0200
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9bi781943Fi1YbGm7DRjMJtA7a8MR1CaCtCUJFCyXQTzY+HHcPTD4Gv5vc2Lv5l2T3e7xwLE5xpfMzFpBKmHog==", "user"=>{"first_name"=>"Eva", "last_name"=>"", "email"=>"eva.papazian@mail.be", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :current_password
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:16
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "first_name" = $1, "last_name" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["first_name", "Eva"], ["last_name", ""], ["updated_at", "2020-03-29 12:01:20.502369"], ["id", 10]]
+  ↳ app/models/user.rb:16
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:16
+Unpermitted parameter: :current_password
+Unpermitted parameter: :current_password
+Unpermitted parameter: :current_password
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:01:20 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 52ms (Views: 50.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:01:30 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:03:34 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (312.5ms)
+Completed 500 Internal Server Error in 318ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_admin_recipes_path' for #<#<Class:0x00007f865cedd778>:0x00007f865c08b3c8>
+Did you mean?  new_admin_recipe_path
+               new_admin_user_path
+               new_admin_recipe_url):
+    1: Bienvenue <%= @current_user.first_name %>. Tu as accès à cette page car tu es admin. Elle récapitule tout ce que tu as dans ton site:
+    2: 
+    3: Tu peux créer une recette: <%= link_to "Nouvelle recette", new_admin_recipes_path %>
+  
+app/views/admin/recipes/index.html.erb:3:in `_app_views_admin_recipes_index_html_erb__1759346671687784299_70107523227840'
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:03:44 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 14:03:46 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 41ms (Views: 36.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:05:00 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:05:02 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:05:04 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 72ms (Views: 67.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:05:05 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 61ms (Views: 51.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:05:33 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:06:13 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 14:06:15 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (12.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 35ms (Views: 27.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:06:16 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 24.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 14:06:20 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 41ms (Views: 34.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:06:33 +0200
+Processing by Admin::RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Du4lxh6xtc8iO2GXlmVC8U+9RmNQqLQqFhnk1Xk5AKc+CpI7I1VcZWkkLpi0ePqGiM+e3k13LcLu88234z8fKw==", "title"=>"Banana bread", "body"=>"Deux bananes et trois oeufs", "commit"=>"Create Recipe"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Banana bread"], ["description", "Banana bread"], ["created_at", "2020-03-29 12:06:33.169585"], ["updated_at", "2020-03-29 12:06:33.169585"]]
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 9ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:06:33 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 14:06:36 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 35ms (Views: 31.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes/22" for 127.0.0.1 at 2020-03-29 14:06:41 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 60ms (Views: 51.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/recipes/21" for 127.0.0.1 at 2020-03-29 14:06:49 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 44ms (Views: 36.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 14:07:44 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:07:45 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 14:07:48 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 39ms (Views: 34.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:08:10 +0200
+Processing by Admin::RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sMwH63nUlgLdBAruFPUQ7sL5BDFvQSne8jZjbNPNdBaAKLAWRDB/qJYbReE26KiZBYvcjHKesDYK3EoOSctrmg==", "title"=>"Gâteau au citron", "body"=>"il faut du yahourt et des oeufs", "commit"=>"Créer la recette"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[36mRecipe Create (1.3ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Gâteau au citron"], ["description", "Gâteau au citron"], ["created_at", "2020-03-29 12:08:10.678424"], ["updated_at", "2020-03-29 12:08:10.678424"]]
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 28ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:08:10 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 14:08:12 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/23" for 127.0.0.1 at 2020-03-29 14:08:17 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 33.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 14:09:02 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (10.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 48ms (Views: 38.2ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:09:08 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 14:09:09 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 56ms (Views: 46.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:09:26 +0200
+Processing by Admin::RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yV0viCyKoYuL03VZSHFI5cRhGzpPbzejsU3dODHu/Tz5uZh1EW5IIcDMOlZqbPCSAxPDh1KwrktJp/Raq+jisA==", "title"=>"Allez marche stp", "body"=>"ça c'est les ingrédients ", "commit"=>"Créer la recette"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[36mRecipe Create (1.0ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Allez marche stp"], ["created_at", "2020-03-29 12:09:26.509739"], ["updated_at", "2020-03-29 12:09:26.509739"]]
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 18ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:09:26 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 14:09:28 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/24" for 127.0.0.1 at 2020-03-29 14:09:34 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 46ms (Views: 37.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 14:10:30 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:10:34 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 33.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 14:10:36 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:10:52 +0200
+Processing by Admin::RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DJFiMA5tZg4Z399ncGVOSN/uJR5PyenFZkvwSeFP17E8ddXNM4mPpFLAkGhSePY/GJz9o1IWcC2eodkre0nIPQ==", "title"=>"Gâteau chocolat", "description"=>"c'est bon", "ingredients"=>"il faut du chocolat", "commit"=>"Créer la recette"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[36mRecipe Create (1.0ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "ingredients", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Gâteau chocolat"], ["description", "c'est bon"], ["ingredients", "il faut du chocolat"], ["created_at", "2020-03-29 12:10:52.052295"], ["updated_at", "2020-03-29 12:10:52.052295"]]
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 15ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:10:52 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 14:10:53 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:38
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes/25" for 127.0.0.1 at 2020-03-29 14:10:58 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 83ms (Views: 76.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/recipes/25" for 127.0.0.1 at 2020-03-29 14:11:33 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 42ms (Views: 36.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipes/25" for 127.0.0.1 at 2020-03-29 14:12:08 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipes/25" for 127.0.0.1 at 2020-03-29 14:12:20 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 26.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:12:26 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-03-29 14:12:27 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 45ms (Views: 38.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:12:50 +0200
+Processing by Admin::RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xnXws2j5dS7epmiaF6uHZkZNGTwN4JGQ1+jFqydmE/L2kUdOVR2chJW5J5U1tj8RgT/BgRA/CHgvAuzJvWAMfg==", "title"=>"Sandwich", "description"=>"Un super sandwich des familles", "ingredients"=>"Pain, fromage et salade", "commit"=>"Créer la recette"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[36mRecipe Create (0.9ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "ingredients", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sandwich"], ["description", "Un super sandwich des familles"], ["ingredients", "Pain, fromage et salade"], ["created_at", "2020-03-29 12:12:50.714413"], ["updated_at", "2020-03-29 12:12:50.714413"]]
+  ↳ app/controllers/admin/recipes_controller.rb:15
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/recipes_controller.rb:15
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 17ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:12:50 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:13:53 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:14:02 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/home/evapapazian/Documents/REVISIONS/entrainement/app/views/admin/recipes/index.html.erb:23: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/admin/recipes/index.html.erb:23: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:14:16 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  Rendered admin/recipes/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: 
+    5: Voici toutes les recettes actuellement dispo sur le site:
+    6: 
+    7:  <% @recipes.each do |t| %>
+    8: <div class="row" style="margin-top: 140px;margin-left: 100px;">
+    9: 
+   10: 	<div class="card border-secondary mb-3" style="max-width: 20rem;">
+  
+app/views/admin/recipes/index.html.erb:7:in `_app_views_admin_recipes_index_html_erb__1759346671687784299_70107661818360'
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:14:54 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 40ms (Views: 26.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:15:08 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:15:34 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 30ms (Views: 26.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/26" for 127.0.0.1 at 2020-03-29 14:15:47 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:15:59 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 76ms (Views: 71.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2020-03-29 14:17:05 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:20:02 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-03-29 14:20:07 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kTdIYyiK39VM5WtsSU8Ful26ikfGTdjtsZnhu3Bx1JEkTCCo7b0uuLPNeIXjSRBiEQjYnuf6Iw9lS9qr71/+wQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:20:07 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_admin' for nil:NilClass):
+    35:       <ul class="navbar-nav mr-auto">
+    36:            <a class="nav-link"<%= link_to "Recettes", recipes_path %>
+    37:             
+    38:              <% if current_user.is_admin %>
+    39:               <a class="nav-link" <%= link_to "T'es admin bro", admin_recipes_path %>
+    40: 
+    41:                <% end %>
+  
+app/views/layouts/application.html.erb:38:in `_app_views_layouts_application_html_erb___813422163192630042_70107590592840'
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:20:14 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_admin' for nil:NilClass):
+    35:       <ul class="navbar-nav mr-auto">
+    36:            <a class="nav-link"<%= link_to "Recettes", recipes_path %>
+    37:             
+    38:              <% if current_user.is_admin %>
+    39:               <a class="nav-link" <%= link_to "T'es admin bro", admin_recipes_path %>
+    40: 
+    41:                <% end %>
+  
+app/views/layouts/application.html.erb:38:in `_app_views_layouts_application_html_erb___813422163192630042_70107531364680'
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:20:50 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_admin' for nil:NilClass):
+    35:       <ul class="navbar-nav mr-auto">
+    36:            <a class="nav-link"<%= link_to "Recettes", recipes_path %>
+    37: 
+    38:              <% if current_user.is_admin != false %>
+    39:               <a class="nav-link" <%= link_to "T'es admin bro", admin_recipes_path %>
+    40: 
+    41:                <% end %>
+  
+app/views/layouts/application.html.erb:38:in `_app_views_layouts_application_html_erb___813422163192630042_70107707660160'
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:21:23 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_admin' for nil:NilClass):
+    35:       <ul class="navbar-nav mr-auto">
+    36:            <a class="nav-link"<%= link_to "Recettes", recipes_path %>
+    37: 
+    38:              <% if current_user.is_admin %>
+    39:               <a class="nav-link" <%= link_to "T'es admin bro", admin_recipes_path %>
+    40: 
+    41:                 <% else %>
+  
+app/views/layouts/application.html.erb:38:in `_app_views_layouts_application_html_erb___813422163192630042_70107390344300'
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:21:28 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_admin' for nil:NilClass):
+    35:       <ul class="navbar-nav mr-auto">
+    36:            <a class="nav-link"<%= link_to "Recettes", recipes_path %>
+    37: 
+    38:              <% if current_user.is_admin %>
+    39:               <a class="nav-link" <%= link_to "T'es admin bro", admin_recipes_path %>
+    40: 
+    41:                 <% else %>
+  
+app/views/layouts/application.html.erb:38:in `_app_views_layouts_application_html_erb___813422163192630042_70107530963280'
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 14:21:34 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_admin' for nil:NilClass):
+    35:       <ul class="navbar-nav mr-auto">
+    36:            <a class="nav-link"<%= link_to "Recettes", recipes_path %>
+    37: 
+    38:              <% if current_user.is_admin %>
+    39:               <a class="nav-link" <%= link_to "T'es admin bro", admin_recipes_path %>
+    40: 
+    41:                 <% else %>
+  
+app/views/layouts/application.html.erb:38:in `_app_views_layouts_application_html_erb___813422163192630042_70107705847760'
+Started GET "/users/10" for 127.0.0.1 at 2020-03-29 14:21:38 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:21:40 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_admin' for nil:NilClass):
+    35:       <ul class="navbar-nav mr-auto">
+    36:            <a class="nav-link"<%= link_to "Recettes", recipes_path %>
+    37: 
+    38:              <% if current_user.is_admin %>
+    39:               <a class="nav-link" <%= link_to "T'es admin bro", admin_recipes_path %>
+    40: 
+    41:                 <% else %>
+  
+app/views/layouts/application.html.erb:38:in `_app_views_layouts_application_html_erb___813422163192630042_70107531922140'
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:23:07 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:23:16 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_admin' for nil:NilClass):
+    35:       <ul class="navbar-nav mr-auto">
+    36:            <a class="nav-link"<%= link_to "Recettes", recipes_path %>
+    37: 
+    38:              <% if current_user.is_admin %>
+    39:               <a class="nav-link" <%= link_to "T'es admin bro", admin_recipes_path %>
+    40: 
+    41:                <% end %>
+  
+app/views/layouts/application.html.erb:38:in `_app_views_layouts_application_html_erb___813422163192630042_70107660854340'
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:31:18 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-03-29 14:31:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-03-29 14:31:24 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fim599+AlJakXzipdWLSdLhzrdSDFlsAJvdP8UlE+HxaUTgSPgd/DqHK+TeHR8Ue1tf+5X6xjsIF4bJnS7eMoA==", "user"=>{"email"=>"eva.papazian@mail.be", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "eva.papazian@mail.be"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 147ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:31:24 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:31:29 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:31:31 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 78ms (Views: 74.1ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-03-29 14:31:32 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kY8BuBDHJHyZGYUEn4ltrcfX78CcCPiqgcXKMLljk/1jhtipQ8ntiRYfakjyArVCbS6GeCXCSyWzJUiXiLBb2Q=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:31:32 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-03-29 14:31:33 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 73ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-03-29 14:31:35 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ujcuxoHKmSY5lJ9fsnejXsIyzU86s+nlxRyV7h4Ay4jF/x1pN2Hb39oAaKbFSB4LcBZN6IXdomD79wJ5p4dbxg==", "user"=>{"email"=>"eva.papazian@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "eva.papazian@hotmail.com"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 199ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:31:35 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-03-29 14:31:38 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nfc67Hg9AHCsbu+IOMUarxaUnfNB4ZnywN/z85V0CkBTSchkKCLX69Smj8qz51mzmvZuYe+BXp9PRpokM1m7AQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:31:38 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-03-29 14:31:39 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.7ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-03-29 14:31:39 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 63ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-03-29 14:31:59 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DkvF9/9He1rHskw7nKNwgZchLrh9/KCn82l7bI5F3wR40Nq9c7HNiE2HI4dzG/PwZf+bq0QF3D2mPoHA+9RK2w==", "user"=>{"email"=>"theo@mail.be", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "theo@mail.be"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "theo@mail.be"], ["encrypted_password", "$2a$11$h96RFBHrkgxfSBaYJPQszeaaqM/cjNt.AGRbkZgJtToYQy/XBGuxa"], ["created_at", "2020-03-29 12:31:59.220074"], ["updated_at", "2020-03-29 12:31:59.220074"]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 149ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:31:59 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/11" for 127.0.0.1 at 2020-03-29 14:32:04 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 21.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-03-29 14:32:06 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 63ms (Views: 56.1ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2020-03-29 14:32:13 +0200
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EcukkGw74Phlew+dSYf+5WDKkv+FoulN7rqDDgGBlu/6q3xEX0Pgsg84y+SIkDIwG48Sfvrf41k6DdgUnRU38w==", "user"=>{"first_name"=>"Théo", "last_name"=>"VIalade", "email"=>"theo@mail.be", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :current_password
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:16
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "first_name" = $1, "last_name" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["first_name", "Théo"], ["last_name", "VIalade"], ["updated_at", "2020-03-29 12:32:13.960465"], ["id", 11]]
+  ↳ app/models/user.rb:16
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:16
+Unpermitted parameter: :current_password
+Unpermitted parameter: :current_password
+Unpermitted parameter: :current_password
+Redirected to http://localhost:3000/
+Completed 302 Found in 46ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:32:14 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 49ms (Views: 44.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:32:33 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-03-29 14:32:35 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hRfaP5ROIQtnu4myZanXP4fScM99i+89FSNFMSghwgN7SqZeJHEQtqcWBhviGKPVdeR2qFW3PM+7xfBSnIaUzw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:32:35 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-03-29 14:32:37 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 88ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-03-29 14:32:39 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V1kshfBFHjb2KvXYqefOpYC2xL/5RyOX76zqPsQfswhDGxFDyYRlYfeABrHo6KVfJ3X4kw/JNlYgiqqEqkBKTA==", "user"=>{"email"=>"eva.papazian@mail.be", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "eva.papazian@mail.be"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 203ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:32:39 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-29 14:32:46 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 36ms (Views: 31.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-29 14:33:01 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (10.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:40
+Completed 200 OK in 57ms (Views: 52.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:33:03 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 77ms (Views: 73.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:33:09 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 82ms (Views: 78.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-29 14:33:10 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 67ms (Views: 64.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-03-30 12:12:34 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:40
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-30 12:12:35 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 70ms (Views: 65.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-03-30 12:31:48 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 38ms (Views: 32.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-04 12:02:08 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 242ms (Views: 234.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-04 12:02:12 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (279.9ms)
+Completed 200 OK in 318ms (Views: 298.8ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-04 12:02:18 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XSMPA56au/kkoGXx5k4d+V+Rbh57u9f4z1MvJ8pdAuH5j+wiwfOcoWXurs8FHKS9sDMCCnm6w5Qm7MhY8FfhqQ==", "user"=>{"email"=>"eva.papazian@mail.be", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "eva.papazian@mail.be"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 152ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-04 12:02:18 +0200
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:16
+  Rendered static_pages/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:02:21 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (2.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 41ms (Views: 24.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:10:19 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 46ms (Views: 24.1ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-04-04 12:10:21 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:40
+Completed 200 OK in 39ms (Views: 34.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:10:22 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 46ms (Views: 37.3ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/admin/recipes/1" for 127.0.0.1 at 2020-04-04 12:10:24 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6gIB4CT/3y91IEEG3lZ06EzyhE2xxp7IiBEDAuwXTQLCtEqDEnyKQUIUXfEuwdXADRAtK19gw9MYw8K46f9zuA==", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (7.9ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+No template found for Admin::RecipesController#destroy, rendering head :no_content
+Completed 204 No Content in 42ms (ActiveRecord: 8.5ms)
+
+
+Started DELETE "/admin/recipes/1" for 127.0.0.1 at 2020-04-04 12:10:28 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6gIB4CT/3y91IEEG3lZ06EzyhE2xxp7IiBEDAuwXTQLCtEqDEnyKQUIUXfEuwdXADRAtK19gw9MYw8K46f9zuA==", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=1):
+  
+app/controllers/admin/recipes_controller.rb:28:in `destroy'
+Started DELETE "/admin/recipes/1" for 127.0.0.1 at 2020-04-04 12:10:44 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6gIB4CT/3y91IEEG3lZ06EzyhE2xxp7IiBEDAuwXTQLCtEqDEnyKQUIUXfEuwdXADRAtK19gw9MYw8K46f9zuA==", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+Completed 404 Not Found in 5ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=1):
+  
+app/controllers/admin/recipes_controller.rb:28:in `destroy'
+Started DELETE "/admin/recipes/1" for 127.0.0.1 at 2020-04-04 12:10:49 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6gIB4CT/3y91IEEG3lZ06EzyhE2xxp7IiBEDAuwXTQLCtEqDEnyKQUIUXfEuwdXADRAtK19gw9MYw8K46f9zuA==", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=1):
+  
+app/controllers/admin/recipes_controller.rb:28:in `destroy'
+Started DELETE "/admin/recipes/1" for 127.0.0.1 at 2020-04-04 12:15:36 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6gIB4CT/3y91IEEG3lZ06EzyhE2xxp7IiBEDAuwXTQLCtEqDEnyKQUIUXfEuwdXADRAtK19gw9MYw8K46f9zuA==", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=1):
+  
+app/controllers/admin/recipes_controller.rb:28:in `destroy'
+Started DELETE "/admin/recipes/2" for 127.0.0.1 at 2020-04-04 12:15:40 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6gIB4CT/3y91IEEG3lZ06EzyhE2xxp7IiBEDAuwXTQLCtEqDEnyKQUIUXfEuwdXADRAtK19gw9MYw8K46f9zuA==", "id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (9.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+No template found for Admin::RecipesController#destroy, rendering head :no_content
+Completed 204 No Content in 57ms (ActiveRecord: 10.4ms)
+
+
+Started DELETE "/admin/recipes/2" for 127.0.0.1 at 2020-04-04 12:15:42 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6gIB4CT/3y91IEEG3lZ06EzyhE2xxp7IiBEDAuwXTQLCtEqDEnyKQUIUXfEuwdXADRAtK19gw9MYw8K46f9zuA==", "id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+Completed 404 Not Found in 7ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=2):
+  
+app/controllers/admin/recipes_controller.rb:28:in `destroy'
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:16:15 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/recipes"}, missing required keys: [:id]):
+    10: 	<div class="card border-secondary mb-3" style="max-width: 20rem;">
+    11: 	  
+    12: 	  	<a href="<%= recipe_path(t) %>" class="card-header">Voir plus </a>
+    13: 	  	<%= link_to "Supprimer la recette", admin_recipe_path, method: :delete %>  
+    14: 	 	  <div class="card-body">
+    15: 	    <h4 class="card-title"><%= t.title %> </h4>
+    16: 	    <p class="card-text"><%= t.description %> </p>
+  
+app/views/admin/recipes/index.html.erb:13:in `block in _app_views_admin_recipes_index_html_erb___2583414891558493211_70328614152980'
+app/views/admin/recipes/index.html.erb:7:in `_app_views_admin_recipes_index_html_erb___2583414891558493211_70328614152980'
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:18:01 +0200
+  
+SyntaxError (/home/evapapazian/Documents/REVISIONS/entrainement/app/controllers/admin/recipes_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/admin/recipes_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:18:14 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 46ms (Views: 28.4ms | ActiveRecord: 5.9ms)
+
+
+Started DELETE "/admin/recipes/3" for 127.0.0.1 at 2020-04-04 12:18:18 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rC382U82mvLaZ5kPZP+HH/rBx/SVwq7AYcRyvwcT23CEm7e6ebXPnO1ThfiUaCY3uyNukntk89vxFrMFAvvlyg==", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (2.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 14ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:18:18 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/admin/recipes/4" for 127.0.0.1 at 2020-04-04 12:18:20 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rvYzoRBbdH+3pw0qnisMndxT9r8MT2njLjM7aEiTr2uGQHjCJtghEYCTEd1uvK21nbFf2eLpNPi+4frSTXuR0Q==", "id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (1.4ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:18:20 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:19:48 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 47ms (Views: 25.4ms | ActiveRecord: 9.1ms)
+
+
+Started DELETE "/admin/recipes/5" for 127.0.0.1 at 2020-04-04 12:19:52 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"24r1ZEtF/mS8j62WQBosAEU+cv5vLZ0E9idPlCJ0SwTzPL4HfcarCou7sWGwjY0oBNzbmIGLwB9m9Y4uJ5x1vg==", "id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (2.9ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 10ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:19:52 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/admin/recipes/6" for 127.0.0.1 at 2020-04-04 12:19:53 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Xb3xMTwonb2Vvwxdu2G3+jaqm/Y2O3hR2RHVCdfvAuB1C7pSCqvI06KLEKpL9hbSd0gykNidJUpJwxSz0gc8Wg==", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (2.4ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 7ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:19:53 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admin/recipes/7" for 127.0.0.1 at 2020-04-04 12:19:56 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"88PmJ0xSKPmWSgsqX8SOVBfBHjkAPBdwuojhlDBo7TPbda1EetF9l6F+F92vUy98ViO3X+6aSmsqWiAuNYDTiQ==", "id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (2.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 8ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:19:56 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/admin/recipes/8" for 127.0.0.1 at 2020-04-04 12:19:57 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cvaAjndXkA48JN2n7mukmj5uItL4BLAISYCfscuTxtxaQMvtQdTFYAsQwVAe/AWyf4yLtBai7RPZUl4Lznv4Zg==", "id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (1.4ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:19:57 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admin/recipes/9" for 127.0.0.1 at 2020-04-04 12:19:57 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sh2X1lmaa6R1DG8bNFCi4kvUAgYZKcDFuBdWQhIhNB+aq9y1bxk+ykI4c+zExwPKCjarYPePnd4oxZf4F8kKpQ==", "id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (2.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:19:57 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admin/recipes/10" for 127.0.0.1 at 2020-04-04 12:19:58 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Y1KoF4FCeac6F9rRjtNxB/jp7rTaomgtgZo8ggUOWUlL5ON0t8EsyQ0jxiZ+RNAvuQtH0jQENTYRSP04AOZn8w==", "id"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (7.8ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 11ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:19:58 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/admin/recipes/11" for 127.0.0.1 at 2020-04-04 12:19:58 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LIXgkAEKA0QgLCzJXxZ7KqkLscHIKOB0vZdFp+kGhHYEM6vzN4lWKhcYMD6vgdoC6OkYpyaOvW8tRYQd7O66zA==", "id"=>"11"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (9.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 13ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:19:58 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/admin/recipes/12" for 127.0.0.1 at 2020-04-04 12:19:59 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H+tqqNW3VIgakJAhVGTGYmS6bgGy/Hu+0IejKIGXbas3XSHL4zQB5i2kjNak82dKJVjHZ1xaJqVAVWKShH9TEQ==", "id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (7.9ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 13ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:19:59 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/admin/recipes/13" for 127.0.0.1 at 2020-04-04 12:20:00 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LIgJMp+jT5BXsiL1kN0ES7VVs6gTB/OCrUd+DevetiEEPkJRqSAa/mCGPgJgSqVj9Lcazv2hrpk9lb+37jaImw==", "id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (2.4ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 5ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:00 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/admin/recipes/14" for 127.0.0.1 at 2020-04-04 12:20:00 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zGgb8vPKXDY7XYyVjKKFS9i6CnHpseEuT4lOiKDJvV3k3lCRxUkJWAxpkGJ8NSRjmVijFwcXvDXfW48ypSGD5w==", "id"=>"14"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (1.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:00 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/admin/recipes/15" for 127.0.0.1 at 2020-04-04 12:20:01 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uYYh05Ibm9b9PhcTP0p4Pb8K1Mzxei2+8HZ/Tsh7ga6RMGqwpJjOuMoKC+TP3dkV/uh9qh/ccKVgpL70zZO/FA==", "id"=>"15"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (2.7ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 12ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:01 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/admin/recipes/16" for 127.0.0.1 at 2020-04-04 12:20:01 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XCMCxwcHz46Xr1aYibE2S3boKv9IY0BPwPQACnvFnPZ0lUmkMYSa4KCbSm95JpdjNwqDmabFHVRQJsGwfi2iTA==", "id"=>"16"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (1.4ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:01 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admin/recipes/17" for 127.0.0.1 at 2020-04-04 12:20:02 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lvX1cX+5WdJbLqKVovKkEZPsuq9WwI9K9rftPqKil2i+Q74SSToMvGwavmJSZQU50g4Tybhm0lFmZSyEp0qp0g==", "id"=>"17"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (2.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 8ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:02 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admin/recipes/18" for 127.0.0.1 at 2020-04-04 12:20:03 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aoidalJpl0MMsUKxrxyw7FILBOUzOZCai3rEQwWeF1pCPtYJZOrCLTuFXkZfixHEE+mtg92fzYEbqAX5AHYp4A==", "id"=>"18"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (2.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 6ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:03 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/admin/recipes/19" for 127.0.0.1 at 2020-04-04 12:20:04 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Mz6djJdnbJXkdAAyGfnc8Zt2aMOPJ69sN3fUUkyVXgwbiNbvoeQ5+9NAHMXpbn3Z2pTBpWGB8nenpRXoSX1gtg==", "id"=>"19"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (3.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 13ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:04 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/admin/recipes/20" for 127.0.0.1 at 2020-04-04 12:20:04 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RX4ZneidWPf2pnUa6GgGUxzNYSvdneUoQ1HdFnUY2UhtyFL+3h4NmcGSae0Y/6d7XS/ITTM7uDPTgxyscPDn8g==", "id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (1.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 7ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:04 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/admin/recipes/21" for 127.0.0.1 at 2020-04-04 12:20:05 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OMvSUCcJ3aKk1C4cYaf2wselQaJt75+61voY/7ImCd0QfZkzEYqIzJPgMuuRMFfqhkfoxINJwqFGKNlFt843Zw==", "id"=>"21"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (9.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 13ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:05 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/admin/recipes/22" for 127.0.0.1 at 2020-04-04 12:20:05 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7yEr6AnBcjlIRpA9GBvTAcp/2xxUjYwS9B1Ml2AuRZHHl2CLP0InV39yjMrojHIpi51yeror0Qlkz40tZcZ7Kw==", "id"=>"22"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (1.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:05 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/admin/recipes/23" for 127.0.0.1 at 2020-04-04 12:20:06 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OcwHKfgnlsQsxCUoKI6fmicTDwfyBEqyFuywDhh95BERekxKzqTDqhvwOd/YGT6yZvGmYRyiF6mGPnG0HZXaqw==", "id"=>"23"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (3.9ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 10ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:06 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/admin/recipes/24" for 127.0.0.1 at 2020-04-04 12:20:07 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qrwf5MLhBn4lEylaKxm8DD2oEA2vQ2LcHmf0aPoZQXOCClSH9GJTEBInNa3bjh0kfEq5a0HlP8eOtTXS//F/yQ==", "id"=>"24"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (1.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 6ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:07 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admin/recipes/25" for 127.0.0.1 at 2020-04-04 12:20:07 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OcVS0FvYvgaTPgPK7GjF+Nu3apaczK2coX+stZ8lePMRcxmzbVvraKQKHz0c/2TQmlXD8HJq8IcxrW0Pms1GSQ==", "id"=>"25"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (3.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 15ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:07 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 55ms (Views: 46.9ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/admin/recipes/26" for 127.0.0.1 at 2020-04-04 12:20:07 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JbEBXKBaFJMLW7yPU3ZLbVz5m1PDt75L0Zpg/8xTMGkNB0o/ltlB/TxvoHij4epFHRsyNS0R41BBSKFFybsO0w==", "id"=>"26"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (3.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 15ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:07 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 58ms (Views: 49.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2020-04-04 12:20:10 +0200
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/recipes/index.html.erb:6
+  Rendered recipes/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:40
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-04-04 12:20:14 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:34 +0200
+Processing by Admin::RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6rq11lJnbBKx/flcfRmxHsm50hFgtaXvq3KGNGP+t3G5QQrLgS0tIDS/jkeCEH+yHqhiobJrgKRtf9jzY2ZZrA==", "title"=>"Gnocchis ", "description"=>"Des gnocchis à la patate douce", "ingredients"=>"une patate douce", "commit"=>"Créer la recette"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/recipes_controller.rb:18
+  [1m[36mRecipe Create (1.9ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "ingredients", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Gnocchis "], ["description", "Des gnocchis à la patate douce"], ["ingredients", "une patate douce"], ["created_at", "2020-04-04 10:20:34.470648"], ["updated_at", "2020-04-04 10:20:34.470648"]]
+  ↳ app/controllers/admin/recipes_controller.rb:18
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/recipes_controller.rb:18
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 12ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:34 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 21.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/27" for 127.0.0.1 at 2020-04-04 12:20:37 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:1
+  Rendered recipes/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/admin/recipes/27" for 127.0.0.1 at 2020-04-04 12:20:43 +0200
+Processing by Admin::RecipesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H1A7G3OQEQmy+F75NJptwZ8VCBfZ/mZqULfamwN32lg35nB4RRNEZ4XMQg7EDczp3vehcTdYO3HAZRshBp/k4g==", "id"=>"27"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/admin/recipes_controller.rb:28
+  [1m[36mRecipe Destroy (9.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/admin/recipes_controller.rb:29
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 15ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:20:43 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/recipes/new" for 127.0.0.1 at 2020-04-04 12:20:56 +0200
+Processing by Admin::RecipesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/new.html.erb within layouts/application
+  Rendered admin/recipes/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:21:14 +0200
+Processing by Admin::RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"90VD2DP6wnNPEdXn29NmB7qAUwapE0Wn/7Fafgv1ZFukvvzF4LCDQcpTovwk2qirbZHjtnvNYOw5vAS5C22Khg==", "title"=>"Gâteau au chocolat", "description"=>"Un gâteau super bon", "ingredients"=>"Du chocolat et de la farine", "commit"=>"Créer la recette"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/recipes_controller.rb:18
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "ingredients", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Gâteau au chocolat"], ["description", "Un gâteau super bon"], ["ingredients", "Du chocolat et de la farine"], ["created_at", "2020-04-04 10:21:14.616087"], ["updated_at", "2020-04-04 10:21:14.616087"]]
+  ↳ app/controllers/admin/recipes_controller.rb:18
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/recipes_controller.rb:18
+Redirected to http://localhost:3000/admin/recipes
+Completed 302 Found in 7ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/admin/recipes" for 127.0.0.1 at 2020-04-04 12:21:14 +0200
+Processing by Admin::RecipesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering admin/recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/views/admin/recipes/index.html.erb:7
+  Rendered admin/recipes/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+

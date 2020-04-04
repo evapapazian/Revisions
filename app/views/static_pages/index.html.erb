@@ -16,11 +16,14 @@
   <% if user_signed_in? %>
     
 
-
+      <% if current_user.first_name != nil %>
      
       <h2> Tu es connecté en tant que: <%= current_user.first_name %> </h2>
       
-  
+      <% else %>
+
+      <h2> Tu es bien connecté ! </h2>
+      <% end %> 
 
 
    <li>

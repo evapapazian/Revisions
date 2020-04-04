@@ -12,3 +12,5 @@ recipes =[]
 	recipe_new = Recipe.create(title: Faker::Food.vegetables, description: Faker::Lorem.sentence(word_count: 10))
 recipes << recipe_new
 end
+
+admin = User.create(email: "eva.papazian@mail.be", password: "trucbidule", is_admin: true, first_name: "Eva", last_name: "Papazian")
